@@ -5,7 +5,8 @@ spring:
     active: dev
   config:
     # no "optional:" prefix on purpose: fail fast instead of silently starting with unbound properties
-    import: configserver:${CONFIG_SERVER_URL:http://localhost:8071}
+    #replace localhost with container name of the config server which is "configserver"
+    import: configserver:${CONFIG_SERVER_URL:http://configserver:8071}
   datasource:
     url: jdbc:postgresql://postgres:5432/account_db
     username: admin

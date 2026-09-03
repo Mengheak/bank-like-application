@@ -1,0 +1,14 @@
+account:
+  msg: Welcome to the Heak bank account default application
+  build-version: 3
+
+  mailDetails:
+    hostName: default-account@mengheak.com
+    port: 9000
+    from: default-account@mengheak.com
+    subject: Your account details from Mengheak bank default environment
+
+  activeBranches:
+    - Phnom Penh
+    - Kompong Cham
+    - Battonbong

@@ -1,3 +1,18 @@
 spring:
   application:
     name: configserver
+  profiles:
+    active:
+      - native
+#      - git
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+        git:
+          uri:
+#          default-label: main
+#          clone-on-start: true
+server:
+  port: 8071

@@ -19,6 +19,6 @@ spring:
           default-label: main
           clone-on-start: true
           username: Mengheak
-          password: ${GITHUB_TOKEN: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}
+          password: ${GITHUB_TOKEN}
 server:
   port: 8071

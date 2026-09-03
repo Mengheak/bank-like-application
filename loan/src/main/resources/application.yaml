@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: loan
+  data:
+    mongodb:
+      auto-index-creation: true
+  mongodb:
+    uri: mongodb://localhost:27017
+    database: loan_service_db
+

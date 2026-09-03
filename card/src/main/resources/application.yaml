@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: card
+  data:
+    mongodb:
+      auto-index-creation: true
+  mongodb:
+    uri: mongodb://localhost:27017
+    database: card_service_db
+

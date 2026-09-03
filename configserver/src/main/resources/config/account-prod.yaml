@@ -3,9 +3,9 @@ account:
   build-version: 3
 
   mailDetails:
-    hostName: prod-default-account@mengheak.com
+    hostName: prod-account@mengheak.com
     port: 9000
-    from: prod-default-account@mengheak.com
+    from: prod-account@mengheak.com
     subject: Your account details from Mengheak bank production environment
 
   activeBranches:

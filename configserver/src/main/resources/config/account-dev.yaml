@@ -3,9 +3,9 @@ account:
   build-version: 3
 
   mailDetails:
-    hostName: dev-default-account@mengheak.com
+    hostName: dev-account@mengheak.com
     port: 9001
-    from: dev-default-account@mengheak.com
+    from: dev-account@mengheak.com
     subject: Your account details from Mengheak bank dev environment
 
   activeBranches:

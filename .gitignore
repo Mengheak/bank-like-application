@@ -1,4 +1,5 @@
 .env
 HELP.md
 .vscode/
-.idea
+.idea/
+.claude/

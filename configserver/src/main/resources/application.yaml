@@ -15,8 +15,12 @@ spring:
 
         #this git is for storing config on github
         git:
-          uri: https://github.com/Mengheak/bank-config-server.git
+#          uri: https://github.com/Mengheak/bank-config-server.git
+          uri: https://github.com/Mengheak/bank-config-server-private.git #trying with private repo
           default-label: main
           clone-on-start: true
+          #these are for accessing private repo
+          password: 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
+          username: Mengheak
 server:
   port: 8071

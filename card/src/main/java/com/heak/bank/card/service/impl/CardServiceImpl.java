@@ -24,13 +24,10 @@ public class CardServiceImpl implements CardService {
         return cardRepository.findAll();
     }
 
-    @Override
-    public Card getById(String id) {
-        return cardRepository.findById(id).orElseThrow(() -> new RuntimeException("Cannot find loan with id = "+id));
-    }
+
 
     @Override
-    public Card getByCustomerId(Long customerId) {
-        return cardRepository.findByCustomerId(customerId).orElseThrow(() -> new RuntimeException("Cannot find loan with id = "+customerId));
+    public List<Card> getByCustomerId(Long customerId) {
+        return cardRepository.findByCustomerId(customerId);
     }
 }

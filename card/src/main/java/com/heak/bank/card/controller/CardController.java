@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/loans")
+@RequestMapping("api/cards")
 @RequiredArgsConstructor
 public class CardController {
 
@@ -28,12 +28,9 @@ public class CardController {
     public ResponseEntity<List<Card>> list(){
         return ResponseEntity.status(HttpStatus.OK).body(cardService.list());
     }
-    @GetMapping("{id}")
-    public ResponseEntity<Card> get(@PathVariable("id") String id){
-        return ResponseEntity.status(HttpStatus.OK).body(this.cardService.getById(id));
-    }
-    @GetMapping("/by-customer/{customerId}")
-    public ResponseEntity<Card> getByCustomerId(@PathVariable("customerId") Long customerId){
+
+    @GetMapping("{customerId}")
+    public ResponseEntity<List<Card>> getByCustomerId(@PathVariable("customerId") Long customerId){
         return ResponseEntity.status(HttpStatus.OK).body(cardService.getByCustomerId(customerId));
     }
 }

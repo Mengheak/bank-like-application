@@ -20,9 +20,8 @@ spring:
           default-label: main
           clone-on-start: true
           #these are for accessing private repo
-          password: "{cipher}b169c2f60ba8bdef9a665a9583671ffdb5b26ab118bee6b2c1452d96af28bbb6eceda079b0f25326967a03089e5515d2cef6003be1781934b7742c61d05344be"
           username: Mengheak
 server:
   port: 8071
 encrypt:
-  key: heakbank
+  key:

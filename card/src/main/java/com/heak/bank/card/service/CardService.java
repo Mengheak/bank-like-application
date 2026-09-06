@@ -11,7 +11,6 @@ public interface CardService {
 
     List<Card> list();
 
-    Card getById(String id);
 
-    Card getByCustomerId(Long customerId);
+    List<Card> getByCustomerId(Long customerId);
 }

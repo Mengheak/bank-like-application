@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.heak.bank</groupId>
-    <artifactId>eureka-server</artifactId>
+    <artifactId>eurekaserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-server</name>
-    <description>eureka-server</description>
+    <name>eurekaserver</name>
+    <description>eurekaserver</description>
     <url/>
     <licenses>
         <license/>

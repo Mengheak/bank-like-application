@@ -4,9 +4,9 @@ import com.heak.bank.loan.entity.Loan;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import java.util.List;
 
 @Repository
 public interface LoanRepository extends MongoRepository<Loan,String> {
-    Optional<Loan> findByCustomerId(Long customerId);
+    List<Loan> findByCustomerId(Long customerId);
 }

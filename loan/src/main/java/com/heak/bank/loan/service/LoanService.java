@@ -10,7 +10,6 @@ public interface LoanService {
 
     List<Loan> list();
 
-    Loan getById(String id);
 
-    Loan getByCustomerId(Long customerId);
+    List<Loan> getByCustomerId(Long customerId);
 }

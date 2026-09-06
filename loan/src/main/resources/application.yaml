@@ -7,4 +7,5 @@ spring:
   mongodb:
     uri: mongodb://localhost:27017
     database: loan_service_db
-
+server:
+  port: 8090

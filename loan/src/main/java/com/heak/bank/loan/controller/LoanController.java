@@ -27,12 +27,9 @@ public class LoanController {
     public ResponseEntity<List<Loan>> list(){
         return ResponseEntity.status(HttpStatus.OK).body(loanService.list());
     }
-    @GetMapping("{id}")
-    public ResponseEntity<Loan> get(@PathVariable("id") String id){
-        return ResponseEntity.status(HttpStatus.OK).body(this.loanService.getById(id));
-    }
-    @GetMapping("/by-customer/{customerId}")
-    public ResponseEntity<Loan> getByCustomerId(@PathVariable("customerId") Long customerId){
+
+    @GetMapping("{customerId}")
+    public ResponseEntity<List<Loan>> getByCustomerId(@PathVariable("customerId") Long customerId){
         return ResponseEntity.status(HttpStatus.OK).body(loanService.getByCustomerId(customerId));
     }
 }

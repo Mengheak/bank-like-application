@@ -24,13 +24,10 @@ public class LoanServiceImpl implements LoanService {
         return loanRepository.findAll();
     }
 
-    @Override
-    public Loan getById(String id) {
-        return loanRepository.findById(id).orElseThrow(() -> new RuntimeException("Cannot find loan with id = "+id));
-    }
+
 
     @Override
-    public Loan getByCustomerId(Long customerId) {
-        return loanRepository.findByCustomerId(customerId).orElseThrow(() -> new RuntimeException("Cannot find loan with id = "+customerId));
+    public List<Loan> getByCustomerId(Long customerId) {
+        return loanRepository.findByCustomerId(customerId);
     }
 }

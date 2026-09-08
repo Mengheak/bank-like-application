@@ -7,5 +7,19 @@ spring:
   mongodb:
     uri: mongodb://localhost:27017
     database: card_service_db
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #      defaultZone: http://localhost:9000/eureka/
+      defaultZone: http://localhost:9000/eureka/
+info:
+  app:
+    name: Account Microservice
+    description: Heak bank Account app
+    version: 1.0.0 (get from pom)
 server:
   port: 8070
